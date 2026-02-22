@@ -1,0 +1,6 @@
+services:
+  ear:
+    build: .
+    ports:
+      - "1234:80"
+    restart: unless-stopped

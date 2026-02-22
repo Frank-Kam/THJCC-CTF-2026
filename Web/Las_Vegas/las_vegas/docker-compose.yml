@@ -1,0 +1,11 @@
+services:
+  las_vegas:
+    build: .
+    ports:
+      - "14514:14514"
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: "0.2"
+          memory: 40M

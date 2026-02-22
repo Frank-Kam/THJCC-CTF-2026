@@ -1,0 +1,11 @@
+services:
+  happy_cat_jail:
+    build: .
+
+    ports:
+      - "9000:9000"
+
+    restart: always
+    mem_limit: 1030m
+    cpus: "0.8"
+    pids_limit: 180
